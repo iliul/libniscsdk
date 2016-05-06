@@ -1,0 +1,23 @@
+libniscsdk (1.0-4) unstable; urgency=low
+
+  * modify changelog
+
+ -- root <liulei@nfschina.com>  Thu, 10 Dec 2015 16:11:05 +0800
+
+libniscsdk (1.0-3) unstable; urgency=low
+
+  * Fixed BUG: under 1.5bit enddate -> valid_date & change the method of get static values
+
+ -- root <liulei@nfschina.com>  Thu, 3 Dec 2015 16:11:05 +0800
+
+libniscsdk (1.0-2) unstable; urgency=low
+
+  * Fixed BUG: system buildtime & OS Release values
+
+ -- root <liulei@nfschina.com>  Tue, 16 Nov 2015 10:11:05 +0800
+
+libniscsdk (1.0-1) unstable; urgency=low
+
+  * Initial release (Closes: #nnnn)  <nnnn is the bug number of your ITP>
+
+ -- root <liulei@nfschina.com>  Tue, 22 Sep 2015 20:31:05 +0800
