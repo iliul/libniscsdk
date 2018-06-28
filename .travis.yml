@@ -1,0 +1,26 @@
+language: 
+- c
+
+sudo: 
+- required
+
+compiler:
+- gcc
+
+os:
+- linux
+
+before_script:
+- sudo apt-get install ubuntu-keyring libcurl3-gnutls dpkg-dev debhelper libdb-dev gnupg zlib1g-dev libcurl3-nss
+- sudo apt-get install libcurl4-gnutls-dev xsltproc docbook-xsl docbook-xml po4a doxygen debiandoc-sgml fakeroot
+
+script: 
+- sudo dpkg-source -b libniscsdk-1.0/
+- cd libniscsdk-1.0
+- sudo debian/rules clean
+- sudo debian/rules build
+- sudo fakeroot debian/rules binary
+
+branches:
+  only:
+    - master
